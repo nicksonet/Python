@@ -1,5 +1,4 @@
 # 1. Предварительная подготовка к установке Python 3.6
-# установка окружения происходила для Debian 8.8 (jessie)
 # установка необходимых пакетов
 apt-get install -y make libsqlite3-dev build-essential libssl-dev zlib1g-dev libffi-dev python-dev python3-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev  libncursesw5-dev xz-utils tk-dev libffi-dev python-dev python3-dev
 
