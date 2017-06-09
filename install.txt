@@ -14,7 +14,11 @@ sudo make altinstall
 # возможно (и даже скорее всего) pip у Вас "окажется" в /usr/local/bin/pip3.6 , для сокращения команды запуска делаем симлинк
 ln -s /usr/local/bin/pip3.6 /usr/local/bin/pip
 ln -s /usr/local/bin/pip3.6 /usr/local/bin/pip3
-
+# distanation для симлинка может быть любой из переменной $PATH:
+# root@python:/home/python# echo $PATH
+# /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# но помня о "переносимости" делаем симлинки и установки в /usr/local/bin т.к. эта одна из директорий для размещения программ и 
+# сценариев для *nix систем. Например в Ubuntu ПО разворачивается в /usr/bin, что говорит уже об отступлении от ортодоксального unix way     
 # 3.2 альтернативная установка pip/pip3 для Python3 (если в предыдущем пункте что-то пошло не так)
 wget https://bootstrap.pypa.io/get-pip.py
 sudo python3.6 get-pip.py #очень важный момент, тут мы определяем для какого python нам нужно собрать pip
@@ -26,7 +30,7 @@ pip install --upgrade distribute
 # проверяем правильно ли установился pip
 root@python:/home/python# pip --version # в выводе команды долндна фигурировать директория Python 3.6
 pip 9.0.1 from /usr/local/lib/python3.6/site-packages (python 3.6)
-# cryptography - весьма важный модуль, без которого не сможем поставить необходимые для работы с сетевым оборудованием #пакеты
+# cryptography - весьма важный модуль, без которого не сможем поставить необходимые для работы с сетевым оборудованием пакеты
 python3.6 -m pip install cryptography #чтобы наверняка
 
 # 3.4 Установка и настройка виртуального окружения
@@ -40,7 +44,7 @@ source /usr/local/bin/virtualenvwrapper.sh
 exec bash
 
 #или
-. .bashrc #  как альтернатива exec / "." является синонимом source 
+. .bashrc #  как альтернатива exec -> "." перед .bashrc переявляется синонимом source 
 
 #Создание виртуального окружения в котором по дефолту будет используется Python 3.6
 mkvirtualenv --python=/usr/local/bin/python3.6 pyneng-py3 #проверьте, в некоторых системах путь до python может отличаться
@@ -86,3 +90,12 @@ update-alternatives --config python
 sudo ln -s /usr/bin/python3.6 /usr/local/bin/python
 sudo ln -s /usr/bin/python3.6 /usr/local/bin/python3
 sudo ln -s /usr/local/bin/pip /usr/local/bin/pip3
+
+Виртуальную машину с перечисленными компонентами можно скачать по ссылке https://drive.google.com/open?id=0ByuSz65Dcv1lMDdKZ1M0WmFwYU0
+Виртуальная машина представлена в формате OVA
+Логин/пароль python/python
+Машина может быть доступна как по SSH, так и по RDP (xRDP)
+SSH :22
+RDP: 3389
+
+Так же, для вседоступности на машину установлен teamviewr
