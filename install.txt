@@ -91,11 +91,10 @@ sudo ln -s /usr/bin/python3.6 /usr/local/bin/python
 sudo ln -s /usr/bin/python3.6 /usr/local/bin/python3
 sudo ln -s /usr/local/bin/pip /usr/local/bin/pip3
 
-Виртуальную машину с перечисленными компонентами можно скачать по ссылке https://drive.google.com/open?id=0ByuSz65Dcv1lMDdKZ1M0WmFwYU0
-Виртуальная машина представлена в формате OVA
-Логин/пароль python/python
-Машина может быть доступна как по SSH, так и по RDP (xRDP)
-SSH :22
-RDP: 3389
-
-Так же, для вседоступности на машину установлен teamviewr
+#Виртуальную машину с перечисленными компонентами можно скачать по ссылке https://drive.google.com/open?id=0ByuSz65Dcv1lMDdKZ1M0WmFwYU0
+#Виртуальная машина представлена в формате OVA
+#Логин/пароль python/python
+#Машина может быть доступна как по SSH, так и по RDP (xRDP)
+#SSH :22
+#RDP: 3389
+#Так же, для вседоступности на машину установлен teamviewr
