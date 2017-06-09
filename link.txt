@@ -2,3 +2,4 @@ http://shop.oreilly.com/product/0636920028154.do
 http://shop.oreilly.com/product/9780596158118.do
 https://www.goodreads.com/book/show/22800567-fluent-python
 http://interactivepython.org/runestone/static/pythonds/index.html
+hackerrank, codeeval
